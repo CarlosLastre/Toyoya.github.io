@@ -1,29 +1,165 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-theme-teal.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/lib/w3-theme-red.css"
+  />
+  <script
+    src="https://kit.fontawesome.com/251a921121.js"
+    crossorigin="anonymous"
+  ></script>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container w3-theme-d2">
+        <span
+          onclick="closeSidebar()"
+          class="w3-button w3-display-topright w3-large"
+          >X</span
+        >
+        <br />
+        <div class="w3-padding w3-center">
+          <img
+            class="w3-circle"
+            src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-0/c33.0.206.206a/p206x206/132054611_233797408129876_1171518240150595566_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=da31f3&_nc_ohc=_jztAqwMQhUAX8A5ilq&_nc_ht=scontent.fsjo7-1.fna&tp=27&oh=caeed583e783f358639970910edee2b5&oe=6099881F"
+            alt="avatar"
+            style="width:75%"
+          />
+        </div>
       </div>
+      <a class="w3-bar-item w3-button text-white" href="#">Videos</a>
+      <a class="w3-bar-item w3-button text-white" href="#">Photos</a>
+      <a class="w3-bar-item w3-button text-white" href="#">Messages</a>
+    </nav>
+
+    <header class="w3-top w3-bar w3-theme">
+      <button
+        class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme"
+        onclick="openSidebar()"
+      >
+        &#9776;
+      </button>
+      <h1 class="w3-bar-item">Videos</h1>
+    </header>
+
+    <div class="w3-container" style="margin-top:90px">
+      <hr />
+      <div class="w3-cell-row">
+        <div class="w3-cell" style="width:30%">
+          <img
+            class="w3-circle"
+            src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-9/130894325_224616679047949_3297436913805604964_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=hmUlDHIbUIIAX8YNKGI&_nc_ht=scontent.fsjo7-1.fna&oh=524db750afaa56aab2453299bc9b4e03&oe=609C7CF6"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-cell w3-container text-white">
+          <h3>Frozen</h3>
+          <p>The response to the animations was ridiculous.</p>
+          <a
+            class="w3-bar-item w3-button text-white"
+            href="https://www.youtube.com/embed/Bgclzt-Rh5U?autoplay=1&controls=0&loop=1"
+            ><i class="fab fa-youtube fa-4x text-danger"></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <div class="w3-cell-row">
+        <div class="w3-cell" style="width:30%">
+          <img
+            class="w3-circle"
+            src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-9/123658537_206401384202812_8687809364672849204_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=E3papuCJbCMAX_ao9Rh&_nc_ht=scontent.fsjo7-1.fna&oh=a15a7a126aa2becabe953beb66ca5a3e&oe=60999130"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-cell w3-container text-white">
+          <h3>The Fault in Our Stars</h3>
+          <p>Touching, gripping and genuinely well made.</p>
+          <a
+            class="w3-bar-item w3-button text-white"
+            href="https://www.youtube.com/embed/6q71T7fwiVo?autoplay=1&controls=0&loop=1"
+            ><i class="fab fa-youtube fa-4x text-danger"></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <div class="w3-cell-row">
+        <div class="w3-cell" style="width:30%">
+          <img
+            class="w3-circle"
+            src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-9/132314838_233909761451974_1095522851634230822_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rP2prB1zHwwAX_L_ZIO&_nc_ht=scontent.fsjo7-1.fna&oh=a425225f3487ee6c6e34260a51fca854&oe=6099E118"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-cell w3-container text-white">
+          <h3>The Avengers</h3>
+          <p>A huge success for Marvel and Disney.</p>
+          <a
+            class="w3-bar-item w3-button text-white"
+            href="https://www.youtube.com/embed/Esug_Se02sA?autoplay=1&controls=0&loop=1"
+            ><i class="fab fa-youtube fa-4x text-danger"></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <div class="w3-cell-row">
+        <div class="w3-cell" style="width:30%">
+          <img
+            class="w3-circle"
+            src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-0/c0.53.206.206a/p206x206/132283298_233799024796381_3616133626310302718_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=da31f3&_nc_ohc=02-V7xMoyZgAX-GiBOS&_nc_ht=scontent.fsjo7-1.fna&tp=27&oh=c246f5e7635eb12d7ca1f6649c212c82&oe=609C0D9D"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-cell w3-container text-white">
+          <h3>The Avengers</h3>
+          <p>A huge success for Marvel and Disney.</p>
+          <a
+            class="w3-bar-item w3-button text-white"
+            href="https://www.youtube.com/embed/kxv8Fn3txRs?autoplay=1&controls=0&loop=1"
+            ><i class="fab fa-youtube fa-4x text-danger"></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <div class="w3-cell-row">
+        <div class="w3-cell" style="width:30%">
+          <img
+            class="w3-circle"
+            src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-0/c34.0.206.206a/p206x206/130746824_222565059253111_2296181846771246169_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=da31f3&_nc_ohc=ya018p64rS8AX_e3-iT&_nc_ht=scontent.fsjo7-1.fna&tp=27&oh=c3ff2e74a04b83f1a5f476dff497dcbb&oe=609B9ADA"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-cell w3-container text-white">
+          <h3>The Avengers</h3>
+          <p>A huge success for Marvel and Disney.</p>
+          <a
+            class="w3-bar-item w3-button text-white"
+            href="https://www.youtube.com/embed/JeINyHU_qeE?autoplay=1&controls=0&loop=1"
+            ><i class="fab fa-youtube fa-4x text-danger"></i
+          ></a>
+        </div>
+      </div>
+      <hr />
     </div>
+
+    <footer class="w3-container w3-bottom w3-theme w3-margin-top">
+      <h3>Lastres Productions. 2021</h3>
+    </footer>
+
+    <script>
+      closeSidebar();
+      function openSidebar() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function closeSidebar() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
   </body>
 </html>
